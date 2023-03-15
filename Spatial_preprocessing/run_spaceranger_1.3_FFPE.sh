@@ -12,9 +12,6 @@ datadirectory="/PATH/TO/fastq/directory/"
 reference="/PATH/TO/refdata-gex-GRCh38-2020-A" # https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/installation
 probeset="/PATH/TO/Visium_Human_Transcriptome_Probe_Set_v1.0_GRCh38-2020-A.csv" # https://support.10xgenomics.com/spatial-gene-expression-ffpe/probe-sets/Visium-Human-Transcriptome-Probe-Set-v1-0-GRCh38-2020-A
 
-spaceranger count --id=${sample} --transcriptome=${reference} --fastqs=${datadirectory} --sample=${sample2} --image=${TIF_IMAGE} --slide=${SLIDE_SERIAL_ID} --area=${AREA} --reorient-images --localcores=32 --localmem=150
-
-
 spaceranger count --id=${sample} \
                    --transcriptome=${reference} \
                    --probe-set=${probeset} \
